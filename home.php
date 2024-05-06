@@ -1,4 +1,5 @@
 <?php include ('dbConnection.php'); ?>
+<?php include ('list_members.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,15 +9,11 @@
     <title>Crud operation</title>
 </head>
 <body>
-    <form action="" method="$_POST">
-        <label>Name</label>
-        <input type="text" name="name"><br>
-        <label>Role</label>
-        <input type="text" name="role"><br>
-        <label>Rate</label>
-        <input type="float" name="rate"><br>
+<h2>List of Members</h2>
+    <form action="list_members.php" method="post">
+        <input type="submit" value="List Members">
     </form>
-    <button>List</button>
+    
     <button>Add</button>
     <button>Remove</button>
     <button>update</button>

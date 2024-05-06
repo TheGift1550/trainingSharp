@@ -17,14 +17,10 @@ if ($mysqli->connect_error) {
   echo '<br>';
   echo 'Error: '.$mysqli->connect_error;
   exit();
+}else{
+    echo 'Successful Connection';
 }
 
-echo 'Success: A proper connection to MySQL was made.';
-echo '<br>';
-echo 'Host information: '.$mysqli->host_info;
-echo '<br>';
-echo 'Protocol version: '.$mysqli->protocol_version;
-echo '<br>';
 
 $mysqli->close();
 
